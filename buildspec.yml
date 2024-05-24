@@ -6,7 +6,12 @@ phases:
       nodejs: 20
     commands:
       - apt-get install -y unzip
+      - sudo apt-get update
+      - apt-cache search openjdk-17-jdk
       - sudo apt-get install openjdk-17-jdk -y
+
+
+
 
   build:
     commands:
